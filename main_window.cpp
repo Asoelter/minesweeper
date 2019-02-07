@@ -12,6 +12,12 @@ MainWindow::MainWindow(QWidget *parent)
     , ui_(std::make_unique<Ui::MainWindow>())
 {
     ui_->setupUi(this);
+
+#ifdef DEBUG
+    ui_->rowTextBox->setText("6");
+    ui_->columnTextBox->setText("7");
+    ui_->mineTextBox->setText("8");
+#endif
 }
 
 MainWindow::~MainWindow()

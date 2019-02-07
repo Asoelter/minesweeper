@@ -11,6 +11,8 @@
 
 #include "game_window.h"
 
+#define DEBUG
+
 namespace Ui {
 class MainWindow;
 }
